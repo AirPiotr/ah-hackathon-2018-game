@@ -7,7 +7,7 @@ public class TurretController : MonoBehaviour {
   public Transform headTransform;
   
   // consts
-  public visionRange = 10.0f;
+  public float visionRange = 10.0f;
   
   // composition
   public TargetHelper targetHelper;
