@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Scripts\ShootingController.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\turret\TargetHelper.cs" />
     <Compile Include="Assets\Scripts\turret\TurretController.cs" />
