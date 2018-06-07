@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4177194655952436}
   - component: {fileID: 114062559268838354}
+  - component: {fileID: 114170744723308338}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -286,6 +287,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headTransform: {fileID: 4600707142075708}
+  visionRange: 10
+--- !u!114 &114170744723308338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349609485438838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8fa7d22d74f24ffabb2e9ade9d5c6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135605318690936132
 SphereCollider:
   m_ObjectHideFlags: 1
