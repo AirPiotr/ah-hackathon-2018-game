@@ -3,34 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+    
+    public float movementSpeed = 5f;
 
-    public Rigidbody rigidbody;
-    public float jumpForce = 5f;
-    public float movementSpeed = 150f;
-    public float rotationSpeed = 3f;
-
-	void Start() {
-        rigidbody = GetComponentInChildren<Rigidbody>();		
-	}
-
-	// Update is called once per frame
-	void Update () {
+    void Update () {
         Move();
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Jump(); 
-        }
     }
 
     void Move() {
-        float x = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
-        float z = Input.GetAxis("Vertical") * Time.deltaTime * rotationSpeed;
+        float forwardForce = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
+        float sideForce = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
 
-        transform.Rotate(0, x, 0);
-        transform.Translate(0, 0, z);
-    }
+        transform.Translate(sideForce, 0, forwardForce);
 
-    void Jump() {
-        rigidbody.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
     }
 }

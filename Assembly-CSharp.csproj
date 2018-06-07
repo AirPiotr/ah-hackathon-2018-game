@@ -59,11 +59,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CursorManager.cs" />
+    <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\player\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\player\SmoothMouseLook.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\TargetHelper.cs" />
+    <Compile Include="Assets\Scripts\TurrentController.cs" />
     <Compile Include="Assets\Scripts\TurretController.cs" />
+    <Compile Include="Assets\Scripts\TurretSocket.cs" />
+    <Compile Include="Assets\Scripts\TurretSpawner.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/piotr.fic/ah-game/ah-hackathon-2018-game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
