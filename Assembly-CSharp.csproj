@@ -59,7 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\NearestTargetTracker.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\TurrentController.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>/Users/piotr.fic/ah-game/ah-hackathon-2018-game/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
