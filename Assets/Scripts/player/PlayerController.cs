@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rigidbody;
 
 	void Start() {
-        rigidbody = GetComponentInChildren<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>();
 	}
 
 	// Update is called once per frame
@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
     void Move() {
         float z = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
 
-        transform.Translate(0, 0, z);
+        //transform.Translate(0, 0, z);
+        rigidbody.AddForce(transform.forward * z);
     }
 }
