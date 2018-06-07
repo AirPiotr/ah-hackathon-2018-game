@@ -7,6 +7,8 @@ public class Stats : MonoBehaviour {
     [HideInInspector] public float currentHealth;
     public float maxHealth = 100;
 
+    public Weapon currentWeapon;
+
     void Awake() {
         currentHealth = maxHealth;
     }

@@ -6,8 +6,15 @@ public class PlayerStats : Stats
 {
     public delegate void onStatsChangedCallback();
     public onStatsChangedCallback onStatsChanged;
+    public PrefabsManager prefabsManager;
 
-    public Weapon weapon = Weapon.regular;
+    void Start() {
+        prefabsManager = PrefabsManager.instance;
+
+        currentWeapon = prefabsManager.regularWeapon;
+
+        SubscribeChange();
+    }
 
     public override void TakeDamage(float damage)
     {
@@ -16,25 +23,24 @@ public class PlayerStats : Stats
         SubscribeChange();
     }
 
-    void SubscribeChange()
-    {
-        if (onStatsChanged != null) {
-            onStatsChanged.Invoke();
-        }
-    }
-
     public void SwitchWeapon() {
-        switch(weapon) {
-            case Weapon.heavy:
-                weapon = Weapon.regular;
+        switch(currentWeapon.type) {
+            case WeaponType.heavy:
+                currentWeapon = prefabsManager.regularWeapon;
                 break;
-            case Weapon.regular:
-                weapon = Weapon.heavy;
+            case WeaponType.regular:
+                currentWeapon = prefabsManager.heavyWeapon;
                 break;
         }
 
         SubscribeChange();
     }
+
+    public void SubscribeChange() {
+        if (onStatsChanged != null)
+        {
+            onStatsChanged.Invoke();
+        }
+    }
 }
 
-public enum Weapon { regular, heavy };
