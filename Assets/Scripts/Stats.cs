@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour {
 
-    public int currentHealth;
-    public int maxHealth = 100;
+    [HideInInspector] public float currentHealth;
+    public float maxHealth = 100;
 
     void Awake() {
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage) {
+    public virtual void TakeDamage(float damage) {
         currentHealth -= damage;
 
         if (currentHealth <= maxHealth) {
