@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurrentController : MonoBehaviour {
+public class TurretController : MonoBehaviour {
   // components
   public Transform headTransform;
   
