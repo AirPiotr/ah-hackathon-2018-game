@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4359190813061660}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,7 +197,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!81 &81378933334721626
 AudioListener:
   m_ObjectHideFlags: 1
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2124b576bf18948f0aa10b973be4c3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
+  movementSpeed: 5
 --- !u!135 &135089372929717074
 SphereCollider:
   m_ObjectHideFlags: 1
