@@ -5,9 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     
     public float movementSpeed = 5f;
+    public PlayerStats stats;
 
     void Update () {
         Move();
+
+        if (Input.GetKeyDown(KeyCode.Tab)) {
+            stats.SwitchWeapon();
+        }
     }
 
     void Move() {

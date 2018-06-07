@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\CursorManager.cs" />
     <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\player\GUI\StatsUI.cs" />
+    <Compile Include="Assets\Scripts\player\GUI\WeaponUI.cs" />
     <Compile Include="Assets\Scripts\player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\player\SmoothMouseLook.cs" />
