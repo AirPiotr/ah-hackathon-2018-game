@@ -187,6 +187,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 59054718}
+--- !u!1 &67928992 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1283680662055076, guid: ba38f4f7419194ec7989d63a6bb64486,
+    type: 2}
+  m_PrefabInternal: {fileID: 1023393317}
+--- !u!114 &67929000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67928992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b3bc04672184b238c592ae1c294404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 2112220679}
+  bulletSpeed: 50
+  stats: {fileID: 1683312017}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +580,8 @@ Prefab:
       propertyPath: stats
       value: 
       objectReference: {fileID: 1683312017}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114197507910105210, guid: ba38f4f7419194ec7989d63a6bb64486, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ba38f4f7419194ec7989d63a6bb64486, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1165686121
@@ -1265,6 +1285,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008139796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2112220679 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4784269869836536, guid: ba38f4f7419194ec7989d63a6bb64486,
+    type: 2}
+  m_PrefabInternal: {fileID: 1023393317}
 --- !u!1 &2141514350
 GameObject:
   m_ObjectHideFlags: 0
