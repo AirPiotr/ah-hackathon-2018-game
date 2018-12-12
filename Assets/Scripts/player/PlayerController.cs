@@ -5,7 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     
     public float movementSpeed = 5f;
-    public PlayerStats stats;
+    private PlayerStats stats;
+
+    void Start() {
+        stats = GetComponent<PlayerStats>();
+    }
 
     void Update () {
         Move();

@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\player\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Scripts\powerUps\HealthPowerUps.cs" />
     <Compile Include="Assets\Scripts\PrefabsManager.cs" />
     <Compile Include="Assets\Scripts\ShootingController.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />

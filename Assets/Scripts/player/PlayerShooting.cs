@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerShooting : ShootingController {
 
 	void Start () {
+        stats = GetComponent<PlayerStats>();
+
         if (stats.GetType() != typeof(PlayerStats)) {
             Debug.LogError("Stats must be PlayerStats instance!");
         }

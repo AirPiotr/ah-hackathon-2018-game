@@ -13,6 +13,8 @@ public class PlayerStats : Stats
 
         currentWeapon = prefabsManager.regularWeapon;
 
+        currentHealth = maxHealth - 50;
+
         SubscribeChange();
     }
 
@@ -20,6 +22,11 @@ public class PlayerStats : Stats
     {
         base.TakeDamage(damage);
 
+        SubscribeChange();
+    }
+
+    public void Heal(float value) {
+        currentHealth = Mathf.Clamp(currentHealth + value, 0, maxHealth);
         SubscribeChange();
     }
 
