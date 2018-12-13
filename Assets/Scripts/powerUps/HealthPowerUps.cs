@@ -1,18 +1,12 @@
 ﻿using UnityEngine;
 
-public class HealthPowerUps : MonoBehaviour {
+public class HealthPowerUps : Collectable {
     public int healValue = 20;
 
-    private bool collided = false;
-	
-    void OnCollisionEnter (Collision col) {
-        if (col.gameObject.tag == "Player" && !collided) {
-            PlayerStats stats = col.gameObject.GetComponent<PlayerStats>();
+    protected override void Interact(GameObject gameObject) {
+        PlayerStats stats = gameObject.GetComponent<PlayerStats>();
 
-            stats.Heal(healValue);
-
-            collided = true;
-            Destroy(gameObject);
-        }
+        stats.Heal(healValue);
+        Destroy(this.gameObject);
     }
 }

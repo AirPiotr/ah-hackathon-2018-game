@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerStats : Stats
 {
+
+    protected float movementSpeed = 5f;
+    public float speedBoost = 1f;
     public delegate void onStatsChangedCallback();
     public onStatsChangedCallback onStatsChanged;
     public PrefabsManager prefabsManager;
@@ -49,5 +52,8 @@ public class PlayerStats : Stats
             onStatsChanged.Invoke();
         }
     }
-}
 
+    public float GetSpeed() {
+        return movementSpeed * speedBoost;
+    }
+}
